@@ -45,6 +45,9 @@ import UpdateCustomerReport from './Pages/UpdateService'
 import CreateEmployee from './Pages/Employee/createEmployee'
 import EmployeeReportPage from './Pages/Employee/DetailEmployee'
 import UpdateEmployeeReport from './Pages/Employee/UpdateEmployee'
+import AllRegions from './Pages/Regions/AllRegions'
+import CreateRegion from './Pages/Regions/createRegions'
+import UpdateRegion from './Pages/Regions/updateRegions'
 
 
 
@@ -246,6 +249,18 @@ export const router = createBrowserRouter([
           path:"Services/Create",
           element:<CreateService/>
         },
+       {
+        path:"Regions",
+        element:<AllRegions/>
+       },
+        {
+        path:"Regions/create",
+        element:<CreateRegion/>
+       },
+        {
+        path:"Regions/update/:id",
+        element:<UpdateRegion/>
+       },
 
 
         // {

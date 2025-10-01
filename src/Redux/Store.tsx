@@ -65,6 +65,11 @@ import { updateCustomerReportSlice } from './Slice/Services/UpdateServiceSlice';
 import { deleteCustomerReportSlice } from './Slice/customerReportSlice/DeleteCustomerSlice';
 import { employeeReportSlice } from './Slice/Employe/OneEmplaymentSlice';
 import { updateEmployeeReportSlice } from './Slice/Employe/UpdateEmployeeSlice';
+import { GetAllRegionsSlice } from './Slice/RegionsSlice/AllRegions';
+import { createRegionSlice } from './Slice/RegionsSlice/CreateRegionSlice';
+import { getOneRegionSlice } from './Slice/RegionsSlice/SingleRegionsSlice';
+import { updateRegionSlice } from './Slice/RegionsSlice/UpdateRegion';
+import { deleteRegionSlice } from './Slice/RegionsSlice/DeleteRegionSlice';
 
 
 
@@ -155,6 +160,14 @@ reducer:{
      SingleCustomerR:singleCustomerReportSlice.reducer,
      UpdateCustomerR:updateCustomerReportSlice.reducer,
      DeleteCustomerR:deleteCustomerReportSlice.reducer,
+
+
+     //Regions
+     GetAllReggions:GetAllRegionsSlice.reducer,
+     CreateRegion:createRegionSlice.reducer,
+     SingleRegions:getOneRegionSlice.reducer,
+     UpdateRegion:updateRegionSlice.reducer,
+     DeleteRegion:deleteRegionSlice.reducer,
 
 
 
