@@ -48,6 +48,10 @@ import UpdateEmployeeReport from './Pages/Employee/UpdateEmployee'
 import AllRegions from './Pages/Regions/AllRegions'
 import CreateRegion from './Pages/Regions/createRegions'
 import UpdateRegion from './Pages/Regions/updateRegions'
+import Technical from './Pages/Technical/Technical'
+import CreateTechnicalReport from './Pages/Technical/CreateTechnical'
+import UpdateTechnicalReport from './Pages/Technical/updatetechnical'
+import ViewTechnicalReport from './Pages/Technical/ViewSingle'
 
 
 
@@ -261,6 +265,22 @@ export const router = createBrowserRouter([
         path:"Regions/update/:id",
         element:<UpdateRegion/>
        },
+       {
+        path:'Technical',
+        element:<Technical/>
+       },
+       {
+        path:'Technical/update/:id',
+        element:<UpdateTechnicalReport/>
+       },
+       {
+        path:'Technical/veiw/:id',
+        element:<ViewTechnicalReport/>
+       },
+       {
+        path:'Technical/create',
+        element:<CreateTechnicalReport/>
+       },
 
 
         // {
@@ -282,7 +302,7 @@ export const router = createBrowserRouter([
         {
           path:"Employees/salaries/update/:employee_id",
           element:<UpdateSalary/>
-        }
+        },
 
       ]
     }

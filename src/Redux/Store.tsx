@@ -70,6 +70,7 @@ import { createRegionSlice } from './Slice/RegionsSlice/CreateRegionSlice';
 import { getOneRegionSlice } from './Slice/RegionsSlice/SingleRegionsSlice';
 import { updateRegionSlice } from './Slice/RegionsSlice/UpdateRegion';
 import { deleteRegionSlice } from './Slice/RegionsSlice/DeleteRegionSlice';
+import { technicalReportsSlice } from './Slice/technical/TechnicalSlice';
 
 
 
@@ -168,6 +169,10 @@ reducer:{
      SingleRegions:getOneRegionSlice.reducer,
      UpdateRegion:updateRegionSlice.reducer,
      DeleteRegion:deleteRegionSlice.reducer,
+
+
+     //Technical
+     Technical:technicalReportsSlice.reducer
 
 
 
